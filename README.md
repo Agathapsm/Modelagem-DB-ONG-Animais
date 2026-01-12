@@ -1,4 +1,3 @@
-
 # 🐾 Projeto: ONG de Animais
 Este repositório contém o projeto de banco de dados desenvolvido para a gestão de uma ONG de Proteção Animal. O sistema abrange desde o controle de espécies e raças até o histórico clínico de vacinação e o processo final de adoção.
 
@@ -38,22 +37,6 @@ O projeto conta com diversas consultas pré-configuradas para gerar relatórios 
 
 • v_adocoes_adotante: Ranking de tutores mais ativos e contagem de adoções por pessoa.
 
-🛠️ Como Instalar e Rodar
-
-1. Certifique-se de ter o MySQL ou MariaDB instalado.
-
-2. Crie o banco de dados:
-
-SQL
-
-CREATE DATABASE extensao;
-
-3. Importe o arquivo script_banco.sql:
-
-Bash
-
-mysql -u seu_usuario -p extensao < script_banco.sql
-
 📝 Regras de Negócio Implementadas
 
 • Unicidade: Um animal não pode ser adotado por duas pessoas diferentes (vínculo único na tabela de adoção).
@@ -62,3 +45,7 @@ mysql -u seu_usuario -p extensao < script_banco.sql
 
 • Integridade: A remoção de registros é protegida por chaves estrangeiras para evitar dados órfãos.
 
+
+• Segurança: O CPF e o E-mail dos adotantes são campos únicos, evitando duplicidade de cadastros.
+
+• Integridade: A remoção de registros é protegida por chaves estrangeiras para evitar dados órfãos.
