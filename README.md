@@ -45,11 +45,13 @@ O projeto conta com diversas consultas pré-configuradas para gerar relatórios 
 2. Crie o banco de dados:
 
 SQL
+
 CREATE DATABASE extensao;
 
 3. Importe o arquivo script_banco.sql:
 
 Bash
+
 mysql -u seu_usuario -p extensao < script_banco.sql
 
 📝 Regras de Negócio Implementadas
